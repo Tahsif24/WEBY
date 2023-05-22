@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../../background/159Z_2107.w026.n002.628B.p1.628.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form{
+  width: 90%;
+  height: 650px;
+  margin: auto;
+  position: relative;
+}
+.form{
+  background: rgba(56, 117, 164, 0.444);
+    padding: 10px;
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    left: 10%;
+    top: 100px;
+    display: none;
+}
+form h1{
+  width: 80%;
+    margin: 50px auto;
+    color: #f3f7fa;
+    display: flex;
+    align-items: center;
+}
+form h1 i{
+  font-size: 30px;
+  margin: 0 5px;
+}
+.form.active{
+  display: block;
+}
+.field{
+  padding: 5px;
+}
+label{
+  display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(187, 188, 216);
+}
+input{
+  width: 96%;
+    padding: 8px;
+    border: 1px solid rgb(31, 18, 18);
+    margin-left: 20px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+}
+.field>span{
+  margin-left: 20px;
+  display: block;
+  font-style: italic;
+  color: rgb(184, 45, 45);
+}
+button{
+  margin: 20px;
+    padding: 8px 20px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient( 45deg, #416ce1, rgb(30, 54, 74));
+    color: rgb(207, 197, 197);
+    float: left;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+button:nth-of-type(1){
+  display: none;
+}
+.page-indicator{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+}
+em{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgb(72, 82, 144);
+  margin: 0 10px;
+}
+em.cur-page{
+  background: linear-gradient( 45deg, rgb(176, 178, 184), rgb(34, 73, 119));
+}
